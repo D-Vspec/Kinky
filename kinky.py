@@ -8,8 +8,6 @@ import requests
 import praw
 import json
 
-owner = 'jam#2131'
-
 prefix = '+'
 client = commands.Bot(command_prefix=prefix)
 client.remove_command('help')
@@ -229,5 +227,5 @@ async def on_ready():
     await client.change_presence(status=discord.Status.online, activity=discord.Game('with your sister'))
     print('Ready')
 
-client.run('NzE2NDg1MTEyOTMzNjQ2MzU2.XtMy6Q.ybgGtjg-HLrmwsUL556wN8RSPkw')
-#client.run('NzE1OTMxNjc3ODQyNDczMDAw.X1ZkZA.BpXatix8v9hPYh2k4r6psZXaAeA', bot=False)
+client.run(TOKEN)
+
