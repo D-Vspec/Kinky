@@ -53,7 +53,7 @@ while True:
         try:
             #chp = chp
             #chp = str(int(chp) + 1)
-            #driver.get('https://spy-xfamily.com/manga/spy-x-family-chapter-1-mission-' + chp +  '/')
+            #driver.get('manga link' + chp +  '/')
             driver.find_element_by_partial_link_text('Chapter ' + str(int(chp) + 1)).click()
             #driver.find_element_by_class_name('nav-next').click()
             chp = str(int(chp) + 1)
