@@ -11,7 +11,7 @@ pages_to_delete = [0] #First page is 0
 
 first = True
 issue = str(input('Which issue '))
-directory = r'C:\Users\Divyansh\Desktop\STuff\Comics\Manga\opm\\'
+directory = r'C:\Users\Bob\Desktop\STuff\Comics\Manga\opm\\'
 while ComicNumber <= 134:
 
     l = 1
@@ -39,7 +39,7 @@ while ComicNumber <= 134:
 
     ComicNumber = ComicNumber + 1
 
-    comicname = 'OnePunchMan_' + str(issue)
+    comicname = 'NAME_' + str(issue)
 
     photo.save(directory + comicname + '.pdf', save_all=True, append_images=imagelist)
     print('PDF MADE')
